@@ -49,4 +49,6 @@ Python, pandas, or openpyxl guidance.
 
 | id | use case | prompt sequence | related closet | related references |
 | --- | --- | --- | --- | --- |
-| _TBD_ | No use-case prompt chains have been authored yet. | _TBD_ | _TBD_ | _TBD_ |
+| `query-tuning` | Diagnose and rewrite a slow Oracle SQL query with plan evidence. | `01-intake.md` -> `02-query-context.md` -> `03-explain-plan.md` -> `04-rewrite-request.md` -> `05-verification-review.md` | `procedures/query_tuner/SKILL.md` | `references/oracle-sql/` |
+| `report-generation` | Generate a Python Oracle-to-pandas-to-Excel report script. | `01-requirements-intake.md` -> `02-sql-schema-submission.md` -> `03-python-etl-generation.md` -> `04-excel-formatting-generation.md` -> `05-script-review-verification.md` | `procedures/report_generator/SKILL.md` | `references/python-idioms/` |
+| `mock-data-generation` | Generate schema-valid synthetic data artifacts from compressed Oracle schema context. | `01-schema-submission.md` -> `02-pk-fk-hierarchy-analysis.md` -> `03-output-mode-selection.md` -> `04-data-generation.md` -> `05-integrity-verification.md` | `procedures/mock_data_generator/SKILL.md` | `references/oracle-sql/` |
