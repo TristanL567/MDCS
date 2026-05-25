@@ -13,6 +13,12 @@ generation, review, or refinement steps. They must point to procedure closets
 for workflow rules and output contracts, and to reference drawers for dense
 technical knowledge, rather than duplicating that content.
 
+The SQL prompt-chain layer now uses `prompt-chains/sql-general/` as the broad
+entry point and routes specialized SQL work to focused chains for efficiency,
+business-logic mapping, CTE validation, join explanation and validation,
+aggregation design, SQL result validation, and plan-based query tuning. Dense
+Oracle SQL guidance remains in `references/oracle-sql/` drawers.
+
 ## Procedures (Closets)
 
 | Workflow phase | Closet Prompt | Status | Consulted references | Overlap boundary |

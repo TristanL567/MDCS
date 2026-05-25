@@ -13,8 +13,9 @@ Use this checklist:
 7. Aggregation grain is clear.
 8. Column aliases and output names are understandable.
 9. The SQL is Oracle-compatible.
-10. Efficiency concerns are noted without replacing the specialized
-    `sql-efficiency` or `query-tuning` workflows.
+10. CTE, join, aggregation, result-validation, efficiency, logic-mapping, and
+    plan-tuning concerns are routed to the specialized chains when they need
+    detailed workflow coverage.
 
 Return:
 

@@ -13,8 +13,10 @@ Collect or confirm the context needed for the chosen task type:
 4. Joins and relationship assumptions.
 5. Filters, date windows, and bind parameters.
 6. Aggregations and expected output grain.
-7. Existing SQL or error message, if this is explanation, refactor, or debug.
-8. Validation checks the answer should satisfy.
+7. CTE names, dependencies, and intermediate grains, if relevant.
+8. Existing SQL, error message, result evidence, or `EXPLAIN PLAN`, if this is
+   explanation, refactor, debug, validation, or plan-based tuning.
+9. Validation checks the answer should satisfy.
 
 Separate known facts from assumptions using this format:
 

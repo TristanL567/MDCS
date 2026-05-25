@@ -18,6 +18,11 @@ yet.
 - Improve query readability.
 - Improve query efficiency.
 - Map business logic to fields and tables.
+- Validate or explain CTE-based SQL.
+- Explain, choose, or validate joins.
+- Design aggregations and grouped metrics.
+- Validate SQL result correctness.
+- Diagnose plan-based query tuning needs.
 
 ## Routing Guidance
 
@@ -25,8 +30,18 @@ yet.
   business requirement.
 - Use `prompt-chains/sql-logic-mapping/` when the main goal is clarifying
   logic, table, and field mappings before implementation.
+- Use `prompt-chains/sql-cte-validation/` when correctness depends on mapping,
+  validating, explaining, or refactoring CTE stages.
+- Use `prompt-chains/sql-joins/` when the task centers on join choice, join
+  explanation, row-preservation behavior, or duplicate risk.
+- Use `prompt-chains/sql-aggregation/` when the task centers on grouped
+  metrics, output grain, `GROUP BY`, `HAVING`, null handling, or aggregation
+  validation.
+- Use `prompt-chains/sql-result-validation/` when SQL already exists and the
+  main question is whether returned results are correct.
 - Use `procedures/query_tuner/SKILL.md` or `prompt-chains/query-tuning/` when
-  `EXPLAIN PLAN` based tuning is needed.
+  `EXPLAIN PLAN` based tuning, optimizer diagnosis, indexing, or runtime
+  evidence is needed.
 
 ## Prompt Sequence
 

@@ -32,5 +32,6 @@ List concrete checks the user can run, such as:
 ## Routing Note
 
 State whether the task is complete in this general chain or should next move
-to `sql-efficiency`, `sql-logic-mapping`, or `query_tuner`.
+to `sql-efficiency`, `sql-logic-mapping`, `sql-cte-validation`, `sql-joins`,
+`sql-aggregation`, `sql-result-validation`, or `query-tuning`.
 

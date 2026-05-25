@@ -9,7 +9,9 @@ Before the SQL or explanation, separate logic from implementation:
 3. List join logic.
 4. List filter logic.
 5. List aggregation or output-grain logic.
-6. List assumptions that remain.
+6. List CTE stage logic, result-validation evidence, or plan evidence when
+   relevant.
+7. List assumptions that remain.
 
 Then produce the draft appropriate to the task:
 
@@ -21,5 +23,7 @@ Then produce the draft appropriate to the task:
   where useful.
 
 Keep the answer practical. Do not duplicate specialized efficiency or logic
-mapping chain content; route there if the task has become specialized.
+mapping chain content; route there if the task has become specialized. Also
+route to the CTE, joins, aggregation, result-validation, or query-tuning chains
+when those workflows become the main need.
 
